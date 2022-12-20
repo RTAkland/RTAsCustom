@@ -16,12 +16,12 @@ jobs:
       - name: Archive Release # 打包文件为 zip
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'CancelCaveSound.zip'
+          filename: 'RTAsCustom.zip'
           path: 'assets LICENSE pack.mcmeta'
 
       - name: Upload Artifact #上传输出文件
         uses: actions/upload-artifact@v2
         with:
           name: action-zip-release
-          path: 'CancelCaveSound.zip'
+          path: 'RTAsCustom.zip'
 

@@ -17,7 +17,7 @@ jobs:
       - name: Archive Release # 打包文件为 zip
         uses: thedoctor0/zip-release@master
         with:
-          filename: 'CancelCaveSound.zip'
+          filename: 'RTAsCustom.zip'
           path: 'assets LICENSE pack.mcmeta'
 
       - name: Upload Release # 发布到 Release
@@ -26,5 +26,5 @@ jobs:
           allowUpdates: true # 因为之前已经创建了 Release，所以要进行更新
           omitName: true # 更新的时候不改变 Release 的名字
           omitBody: true #更新時不改变 Release 描述
-          artifacts: 'CancelCaveSound.zip' # 多个文件逗号分开
+          artifacts: 'RTAsCustom.zip' # 多个文件逗号分开
           token: ${{ secrets.aaaa }} # https://github.com/settings/tokens 只选 repo 就行
