@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/template_rail_raised_sw", "textures": {"front": "minecraft:block/rail", "back": "minecraft:3d/rails/rail"}}
