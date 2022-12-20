@@ -1,27 +1,30 @@
-name: action-zip-release
+name: release-zip-release
 
 on:
-  push:
-    branches: [main]
+release: # 发布 Release 后才会运行
+types: [published]
+
 jobs:
-  build-zip:
-    name: Build and Publish Extension Zip
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout # 克隆项目
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+build-zip:
+name: Build and Publish Extension Zip
+runs-on: ubuntu-latest
+steps:
+- name: Checkout # 克隆项目
+  uses: actions/checkout@v2
+  with:
+  persist-credentials: false
 
-      - name: Archive Release # 打包文件为 zip
-        uses: thedoctor0/zip-release@master
-        with:
-          filename: 'CancelCaveSound.zip'
-          path: 'assets LICENSE pack.mcmeta'
+- name: Archive Release # 打包文件为 zip
+  uses: thedoctor0/zip-release@master
+  with:
+  filename: 'CancelCaveSound.zip'
+  path: 'assets LICENSE pack.mcmeta'
 
-      - name: Upload Artifact #上传输出文件
-        uses: actions/upload-artifact@v2
-        with:
-          name: action-zip-release
-          path: 'CancelCaveSound.zip'
-          
+- name: Upload Release # 发布到 Release
+  uses: ncipollo/release-action@v1.10.0
+  with:
+  allowUpdates: true # 因为之前已经创建了 Release，所以要进行更新
+  omitName: true # 更新的时候不改变 Release 的名字
+  omitBody: true #更新時不改变 Release 描述
+  artifacts: 'CancelCaveSound.zip' # 多个文件逗号分开
+  token: ${{ secrets.aaaa }} # https://github.com/settings/tokens 只选 repo 就行
