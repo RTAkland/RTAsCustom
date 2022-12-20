@@ -24,4 +24,4 @@ jobs:
         with:
           name: action-zip-release
           path: 'CancelCaveSound.zip'
-          name: action-zip-release
+
