@@ -12,6 +12,7 @@
 
 <!-- TOC -->
 * [目录](#目录)
+* [广告](#广告)
 * [开源](#开源)
 <!-- TOC -->
 
@@ -19,6 +20,10 @@
 # 下载
 
 > 点击 [这里](https://github.com/RTAkland/RTAsCustom/releases/latest)来获取最新版本
+
+# 广告
+
+> [团子小镇](https://www.dgtmc.top)是一个历史悠久的MC生电服务器， 从2016年发展至今。 团子小镇的Github链接: [DangoTown](https://github.com/DangoTown) 
 
 # 开源
 
