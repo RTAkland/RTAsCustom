@@ -1,1 +1,9 @@
-{"parent": "block/powered_rail_raised_ne", "textures": {"front": "block/powered_rail_on", "back": "3d/rails/powered_rail_on"}}
+{
+	"__comment":"Designed by GeForceLegend",
+	"parent":"block/powered_rail_raised_ne",
+	"textures":{
+		"rail":"block/powered_rail_on",
+		"particle":"block/powered_rail_on",
+		"wood":"block/rail_wood_redstone_on"
+	}
+}
