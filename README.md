@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://static.byteas.top/static/icon/rtascustom-icon.png" width=128>
+<img src="./pack.png" width=128>
 
 <h2>RTAsCustom</h2>
 
