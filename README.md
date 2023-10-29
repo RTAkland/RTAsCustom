@@ -23,7 +23,8 @@
 
 # 广告
 
-> [团子小镇](https://www.dgtmc.top)是一个历史悠久的MC生电服务器， 从2016年发展至今。 团子小镇的Github链接: [DangoTown](https://github.com/DangoTown) 
+> [团子小镇](https://www.dgtmc.top)是一个历史悠久的MC生电服务器， 从2016年发展至今。 团子小镇的Github链接: [DangoTown](https://github.com/DangoTown)  
+> 如果不能访问团子小镇主页请点击[这里](https://www.dgtmc.cn)访问备用地址
 
 # 开源
 
