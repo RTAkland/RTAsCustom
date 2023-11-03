@@ -1,0 +1,26 @@
+name: action-zip-release
+
+on:
+  push:
+    branches: [main]
+jobs:
+  build-zip:
+    name: zip pack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Archive
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'RTAsCustom.zip'
+          path: 'assets LICENSE pack.mcmeta pack.png'
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: action-zip-release
+          path: 'RTAsCustom.zip'
